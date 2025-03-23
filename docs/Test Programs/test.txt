@@ -1,0 +1,78 @@
+int x = 10;
+int y = 0;
+
+while (x > 0) {
+      y = y + x;
+      x = x - 1;
+}
+output(y);
+
+tst [x] ;test_loop
+jmp [loop_start]
+jmp [end]
+take [y] ;loop_start
+add [x]
+save [y]
+take [x]
+sub 201
+save [x]
+jmp [test_loop]
+hlt ;end
+...
+#200 00 000
+#201 00 001
+#202 00 002
+#203 00 003
+#204 00 004
+#205 00 005
+...
+#300 00 010 ;x
+#301 00 000 ;y
+...
+
+
+IF Statement:
+
+...
+tst [TMP]
+jmp [IFstart]
+jmp [ELSEstart]
+;IFstart
+    ...
+    ...
+    jmp [ELSEend]
+;ELSEstart
+    ...
+    ...
+;ELSEend
+
+
+While Statement:
+
+;Looptest
+...
+tst [TMP]
+jmp [WHILEstart]
+jmp [WHILEend]
+;WHILEstart
+    ...
+    ...
+    jmp [Looptest]
+;WHILEend
+
+
+
+int x = 10;
+int y = 0;
+
+if(x>y){
+	y++;
+}else{
+	while (x > 0) {
+      		y = y + x;
+      		x = x - 1;
+	}
+}
+System.out.println(y);
+
+

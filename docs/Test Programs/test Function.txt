@@ -1,0 +1,26 @@
+public class Main {
+    public static int mul(int xx, int yy){
+        int ans;
+        while (yy>0){
+            ans+=xx;
+            yy--;
+        }
+        return ans;
+    }
+    public static void main(String[] args) {
+        int x=1; //test comment
+        int y=1;
+        int i=5;
+
+        System.out.println(x);
+        System.out.println(y);
+        while (i>0){
+            int t= x+y;
+            x=y;
+            y=t;
+            System.out.println(t);
+            i--;
+        }
+    }
+}
+

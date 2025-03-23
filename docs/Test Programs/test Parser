@@ -1,0 +1,20 @@
+public class Main {
+    public static int func(int x){
+        return 2;
+    }
+    public static void main(String[] args) {
+        int x;//asdfjadsf;a;lkdjf
+        int y;
+
+        x=23;
+        y=2 ;
+        {
+            y+=1;
+            x++;
+        }
+        y=x+y; //end
+
+        //System.out.println(y);
+    }
+}
+

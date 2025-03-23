@@ -1,0 +1,12 @@
+package org.example.simplejava.ASTTree.statements;
+
+import org.example.simplejava.ASTTree.ASTNode;
+import org.example.simplejava.helperObjects.CodeGenContext;
+import org.example.simplejava.helperObjects.CompilationResult;
+
+import java.util.ArrayList;
+
+abstract public class Statement extends ASTNode {
+
+    abstract public ArrayList<String> generate(CodeGenContext currentScope, CompilationResult result);
+}

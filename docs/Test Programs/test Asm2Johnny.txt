@@ -1,0 +1,12 @@
+;loop_test
+    tst [x]
+    jmp [loop_start]
+    jmp [loop_end]
+;loop_start
+    take [y]
+    add [x]
+    save [y]
+    dec [x]
+    jmp [loop_test]
+;loop_end
+    hlt

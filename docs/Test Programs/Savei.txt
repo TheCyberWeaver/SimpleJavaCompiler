@@ -1,0 +1,20 @@
+ram -> db   2
+db -> ins   3
+ins -> pc   11
+pc -> ab    8
+ram -> db   2
+db -> ins   3
+ins ->pc    11
+pc -> ab    8
+acc -> db   15
+db -> ram   1
+
+
+ins -> ab   4
+ram -> db   2
+db -> ins   3
+ins -> ab   4
+acc -> db   15
+db -> ram   1
+pc++        9
+mc:=0       7
